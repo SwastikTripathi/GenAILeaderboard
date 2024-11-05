@@ -335,7 +335,7 @@ function renderLeaderboard(data) {
         const row = document.createElement('tr');
 
         // Create the badge icon if the student has all 16 badges
-        const badgeIcon = entry.totalBadges >= 16 ? '🏅' : '';
+        const badgeIcon = entry.totalBadges >= 16 && entry.skillBadges == 15 ? '🏅' : '';
 
         row.innerHTML = `
             <td>${index + 1}</td> <!-- Position number -->
